@@ -1,0 +1,270 @@
+<!DOCTYPE hyml>
+<html>
+    <head>
+        <title>Rift eSport</title>
+     <meta charset="UTF-8">   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        /* Style the header */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: rgb(109, 2, 2);
+            color: white;
+        }
+           /* Increase the font size of the h1 element */
+           .header h1 {
+               font-size: 40px;
+           }
+        /* Style the top navigation bar */
+           .navbar {
+            overflow: hidden;
+            background-color: #333;
+           }
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+        /* Change color on hover */
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: darkgray;
+            padding: 20px;
+        }
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: white;
+            width: 100%;
+            padding: 20px;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        /* Responsice layout - when the screen is less than 700px wide, make the two columns stack on top 
+        of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        
+        }
+        /* Responsice layout - when the screen is less than 400px wide, make the navigation links stack on top
+        of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
+        }
+        .img    {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            padding: 1px; 
+        }
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: lightgray;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+
+
+        </style>
+    </head>
+
+             <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <body>
+
+    <div class="header">
+                <div> <img src="img/Rift-LOGO.gif" width="300" height="200"></div><br>
+            <h1 style="font-family: BatmanForeverAlternate;">Rift eSport Community</h1>
+            <p>Join our Discord Server</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Spillere</a>
+        <a href="#">eSport Team`s</a>
+        <a href="#">Bilder</a>
+        <a href="#" class="right">Registrer deg</a>
+        <a href="#" class="right">Om oss</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            
+            <h2>Om oss</h2>
+            <h5>Bilde av eierne</h5>
+            <div class="container">
+            <img src="img/Rift eSport Eiere.jpg" alt="Rift eSport eiere" class="image" style="width: 450px;" height=" 150px">
+                <div class="middle">
+                  <div class="text">Eierne av Rift eSport</div>
+                </div>
+              </div>
+
+            <p style="font-family: BatmanForeverAlternate;">Rift eSport <p> Har 3 eiere og en atpåklatt 
+                <li>Erlend</li>
+                <li>Erik</li>
+                <li>Espen</li>
+                <li>Mathias(Atpåklatt)</li>
+            </p>
+
+            <h3>More text</h3>
+            <p>Joine The Discord Server 
+                <a href="https://discord.gg/AUr2ND6hbk"><img src="img/discord-mascot.png" style="width: 50px; height: 50px;"> </a>
+            </p>
+           
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+        </div>
+        <div class="main">
+                       
+            <h2>Prøve spill for <p style="font-family: BatmanForeverAlternate;"> Rift eSport </h2>
+            <h5>Prøve spill Rift eSport, Mars 12.03.2021</h5>
+            <div class="fakeimg"><img src="img/Prøve.jpg" style="width: 500;" height="200"> </div>
+            <h3>Prøve spill for Rift eSport Counter Strike:Global Offensiv</h3>
+            <p><li>I denne runden kjører vi i gang med 2 nye spiller for Rift. Det vil bli klar gjor prøve spill den 01.05.2021</li></p>
+            <br>
+            <h2>Nyheter fra Rift eSport</h2>
+            <h5>Rift eSport har starte med Pixelmon, Mars 12.03.2021</h5>
+            <div class="fakeimg"><img src="img/PokeGaming.jpg" style="width: 600;" height="300"></div>
+            <p>Rift eSport har startet å spille Pixelmon. </p>
+            <p>Server er under konstruksjon for dere.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Rift eSport</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+    </body>
+    
+</html>
+
+
+<!--Kommentarer
+
+
+
+    <div class="container">
+                <img src="img/Rift eSport Eiere.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Eierne av Rift eSport</div>
+                </div>
+              </div>
+
+
+
+
+    - Basic Tags html - 
+- <h1> Overskrift størrelse Fra 1 til 6 </h6>
+- <p> liten tekst under </p>    
+- <big> gjør teksten støre </big>
+- <small> gjør teksten mindre </small>
+- <i> gjør teksten skrå </i>
+- <hr/> lager linje under teksten
+- <sub> eks H20 gjør talle 2 mindre vis du gjør "sub" </sub> 
+- <sup> eks H20 gjør talle 2 høyere opp vis du gjør "sup" </sup>
+- <a href> Links -linker til discord osv...
+- <img src="img/...." - bilder
+- <ul> </ul> - beholder for list tag
+- <li> </li> - listpil
+- <ol> eks. <ol type="I"> - endrer foran list merke </ol>
+- <meta name="viewport" content="width=device.width, initial-scale=1.0"> - for å endre for forskjellige devices sin skjerm.
+- <
+
+     - Formatting a Page - 
+- <header> </header> 
+    - <nav> </nav>
+- <menu> </menu>   
+- <main> </main>
+    -<article> </article>
+    -<section> </section>
+    -<aside> </aside>
+- <footer> </footer>
+
+    - Basic Tags CSS - 
+- < style="color: blue;"> i eks <p> eller <h1> gjør farge i teksten
+- < style="background-color:blue"> gjør farge i bakgrunnen
+- <
+
+-->
